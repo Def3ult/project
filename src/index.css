@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cyber-secondary text-cyber-primary;
+  }
+}
+
+@layer components {
+  .cyber-button {
+    @apply bg-cyber-surface text-cyber-primary border border-cyber-primary 
+           px-4 py-2 rounded hover:shadow-cyber transition-all duration-300
+           hover:bg-cyber-primary hover:text-cyber-secondary focus:outline-none
+           focus:ring-2 focus:ring-cyber-primary focus:ring-opacity-50;
+  }
+  
+  .cyber-input {
+    @apply bg-cyber-surface border border-cyber-primary text-cyber-primary
+           rounded px-3 py-2 focus:ring-2 focus:ring-cyber-primary
+           focus:border-cyber-primary focus:outline-none;
+  }
+
+  .cyber-card {
+    @apply bg-cyber-surface border border-cyber-primary rounded-lg
+           shadow-md hover:shadow-cyber transition-all duration-300;
+  }
+}
+
+.matrix-bg {
+  background-color: #000000;
+  background-image: linear-gradient(rgba(0, 255, 0, 0.05) 2px, transparent 2px),
+                    linear-gradient(90deg, rgba(0, 255, 0, 0.05) 2px, transparent 2px);
+  background-size: 50px 50px;
+}
